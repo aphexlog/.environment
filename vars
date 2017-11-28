@@ -1,0 +1,30 @@
+# Source bashrc
+alias rc='source ~/.bashrc'
+
+# Exports
+export AWS_CREDS=$HOME/.aws/credentials
+  # pyenv
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Custom aliases
+alias cdhome='cd /mnt/c/Users/aaron.west'
+alias cdworkspace='cd /mnt/c/Users/aaron.west/Workspace'
+alias terraform='/mnt/c/terraform.exe'
+alias awskeys='cat $AWS_CREDS'
+alias cdchef='cd /mnt/c/Users/aaron.west/Workspace/git-repos/chef-repo'
+
+# cmd aliases
+alias c='clear'
+alias mount='mount | colum -t'
+alias path='echo -e ${PATH//:/\\n}'
+alias h='history'
+alias j='jobs -l'
+alias tree='tree -f'
+
+# Networking alias
+alias ports='sudo netstat -tulanp'
