@@ -14,9 +14,11 @@ fi
 # Custom aliases
 alias cdhome='cd /mnt/c/Users/aaron.west'
 alias cdworkspace='cd /mnt/c/Users/aaron.west/Workspace'
-alias terraform='/mnt/c/terraform.exe'
 alias awskeys='cat $AWS_CREDS'
 alias cdchef='cd /mnt/c/Users/aaron.west/Workspace/git-repos/chef-repo'
+
+# Navigational aliases
+alias ll='ls -lG'
 
 # cmd aliases
 alias c='clear'
