@@ -30,3 +30,7 @@ alias tree='tree -f'
 
 # Networking alias
 alias ports='sudo netstat -tulanp'
+
+# Beyond Compare command line tools
+# first install Beyond Compare
+alias bc='bcompare'
